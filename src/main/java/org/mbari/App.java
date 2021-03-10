@@ -143,7 +143,7 @@ public class App extends Application {
 
     private int random(int min, int max) {
         var r = new Random();
-        return r.nextInt(max - min + min);
+        return r.nextInt(max - min) + min;
     }
     
     public static void main(String[] args) {
